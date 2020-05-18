@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Online{
+public class Frequency{
      public static void main(String[] args) {
         String str;
         Scanner s=new Scanner(System.in);
