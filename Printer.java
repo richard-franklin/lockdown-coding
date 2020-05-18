@@ -70,12 +70,12 @@ public class Printer {
     }
     public static void main(String[] args) {
         Printer printer = new Printer();
-	PrintOddTask po=new PrintOddTask(printer,Integer.parseInt(args[0]));
-	PrintEvenTask pe=new PrintEvenTask(printer,Integer.parseInt(args[0]));
-	printer.sleep1=Integer.parseInt(args[1]);
-	printer.sleep2=Integer.parseInt(args[2]);
-        Thread t1 = new Thread(po, args[3]);
-        Thread t2 = new Thread(pe, args[4]);
+	PrintOddTask po=new PrintOddTask(printer,Integer.parseInt(args[4]));
+	PrintEvenTask pe=new PrintEvenTask(printer,Integer.parseInt(args[4]));
+	printer.sleep1=Integer.parseInt(args[0]);
+	printer.sleep2=Integer.parseInt(args[1]);
+        Thread t1 = new Thread(po, args[2]);
+        Thread t2 = new Thread(pe, args[3]);
         t1.start();
         t2.start();
     }
